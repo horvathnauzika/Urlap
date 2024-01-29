@@ -1,0 +1,14 @@
+.gombok{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media screen and (max-width: 500px) {
+    main{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .gombok{
+        grid-template-columns: 1fr;
+    }
+}

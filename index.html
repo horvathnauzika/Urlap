@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=ű, initial-scale=1.0">
+    <title>Horváth Nauzika</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main style="margin: auto; width: 70%; padding: 5px; font-size: 15pt;">
+        <form action="#" method="get">
+            <fieldset style="margin-bottom: 1%; background-color: #EBF3F7; border: 2px solid #2583B2;">
+                <legend style="background-color: #A4FF83;">Regisztráció</legend>
+                <label for="fnev" style=" width: 20%; float: left;">Felhasználónév: </label>
+                <input type="text" id="fnev" name="fnev" placeholder="Pl. Nauzika1234" style="margin-bottom: 1%;" required><br>
+                <label for="jelszo" style="width: 20%; float: left;">Jelszó: </label>
+                <input type="text" id="jelszo" name="jelszo" placeholder="Pl. jelszo4321" style="margin-bottom: 1%;" required><br>
+                <label for="email" style="width: 20%; float: left;">E-mail: </label>
+                <input type="text" id="email" name="email" placeholder="Pl. email@gmail.com" style="margin-bottom: 1%;" required><br>
+            </fieldset>
+            <fieldset style=" background-color: #EBF3F7; border: 2px solid #2583B2;">
+                <legend style="background-color: #A4FF83;">Születés</legend>
+                <label for="szdatum">Születési dátum: </label>
+                <input type="text" id="szdatum" name="szdatum" placeholder="éééé. hh. nn. 📆" style="margin: 1%;" required>
+                
+                    <fieldset style="border: 2px solid #2583B2;">
+                        
+                            <legend style="background-color: #A4FF83;">Személyes</legend>
+                            <div class="gombok">
+                                <div>
+                                    <p>Nyelvtudásod: </p>
+                                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                    <label for="vehicle1">Angol</label><br>
+                                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                                    <label for="vehicle2">Német</label><br>
+                                </div>
+                                <div>
+                                    <p>Kérjük válaszd ki melyik szakra szeretnél jelentkezni!</p>
+                                    <input type="radio" id="html" name="szak" value="szf">
+                                    <label for="html">Szoftverfejlesztő és tesztelő</label><br>
+                                    <input type="radio" id="css" name="szak" value="iru">
+                                    <label for="css">Rendszergazda</label><br>
+                                    <input type="radio" id="javascript" name="szak" value="egyeb" style="margin-bottom: 2%;">
+                                    <label for="javascript">Egyéb</label><br>
+                                </div>
+                                <div style="margin-top: 5%;">
+                                    <label for="nem">Válaszd ki a nemed: </label>
+                                    <select name="nem" id="nem">
+                                        <option value="no">Nő</option>
+                                        <option value="ferfi">Férfi</option>
+                                    </select>
+                                </div>
+                            </div>
+                    </fieldset>
+                    <input type="submit" value="Regisztráció" style="margin: 3% 0% 1% 3%">
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>
